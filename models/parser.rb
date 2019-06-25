@@ -2,7 +2,7 @@ class Parser
   @@all = {}
 
   def self.pronunciationParser()
-    cmudict = "../pronunciationDictionary/cmudict-0.7b.txt"
+    cmudict = "/Users/ariel/OneDrive/Flatiron/RhymeBot/pronunciationDictionary/cmudict-0.7b.txt"
     File.foreach(cmudict) do |line|
       if line[0] < 'A'
         next
