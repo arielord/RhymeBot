@@ -1,5 +1,5 @@
-class Word
+class Word < ActiveRecord::Base
   def initialize()
-    puts "hello world" 
+    puts "hello world"
   end
 end
