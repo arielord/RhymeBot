@@ -1,4 +1,4 @@
-class Parser
+class Parser < ActiveRecord::Base
   @@all = {}
 
   def self.pronunciationParser()
