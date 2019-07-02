@@ -1,6 +1,21 @@
-class Word < ActiveRecord::Base
-  attr_accessor :rhymingsyllable, :pronunciation, :word
-  def initialize()
-    puts "hello world"
+class Word
+  attr_accessor :rhyming_syllable, :syllables, :word
+  @@all = {}
+
+  def initialize(rhyming_syllable:, syllables:, word:)
+    @rhyming_syllable = rhyming_syllable
+    @syllables = syllables
+    @word = word
+
+    @@all[word] = self
   end
+
+  def self.all()
+    @@all
+  end
+
+  def self.find(word)
+    @@all[word]
+  end
+
 end
