@@ -21,7 +21,7 @@ class Rhymebot
       rhyme_word = rhyme.word
       rhyme_syll = rhyme.syllables
 
-      if syll.length <= rhyme_syll
+      if syll.length <= rhyme_syll.length
         less_syll = syll
         more_syll = rhyme_syll
       else
