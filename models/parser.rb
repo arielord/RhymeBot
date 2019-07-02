@@ -17,7 +17,7 @@ class Parser
         if Rhymebot.rhymes.key?(w.rhyming_syllable)
           Rhymebot.rhymes[w.rhyming_syllable] << w
         else
-          Rhymebot.rhymes[rhyming_syllable] = [w.word]
+          Rhymebot.rhymes[rhyming_syllable] = [w]
         end
       end
     end
