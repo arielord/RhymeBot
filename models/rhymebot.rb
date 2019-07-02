@@ -32,8 +32,15 @@ class Rhymebot
       for i in 1..less_syll.length
         if less_syll[-i] == more_syll[-i]
           counter = counter + 1
+        else
+          break
+        end
       end
+      #add rhymes with its rhyme strength as denoted by the counter
+      best_rhymes[rhyme_word] = counter
     end
+    #return hash of best rhymes
+    best_rhymes
   end
 
   def self.rhymes
