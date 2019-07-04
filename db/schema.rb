@@ -10,6 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_07_04_074222) do
+
+  create_table "words", force: :cascade do |t|
+    t.string "word"
+    t.string "syllables"
+  end
 
 end
